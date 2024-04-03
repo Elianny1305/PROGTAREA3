@@ -1,0 +1,97 @@
+@page "/admin/{Id}"
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Detalles de Aplicación</h1>
+            <hr />
+
+            <div class="info-card">
+                <table class="table">
+                    <tr>
+                        <th>Nombre</th>
+                        <td>@aplicacion.Persona.Nombre</td>
+                    </tr>
+                    <tr>
+                        <th>Apellido</th>
+                        <td>@aplicacion.Persona.Apellido</td>
+                    </tr>
+                    <tr>
+                        <th>Motivo</th>
+                        <td>@aplicacion.Motivo</td>
+                    </tr>
+                    <tr>
+                        <th>Sexo</th>
+                        <td>@aplicacion.Persona.Sexo</td>
+                    </tr>
+                    <tr>
+                        <th>Amigos</th>
+                        <td>
+                            <ul>
+                                @foreach (var amigo in aplicacion.Amigos.Where(x => x.Nombre.Length > 3))
+                                {
+                                    <li>@amigo.Nombre</li>
+                                }
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .container {
+        padding: 20px;
+    }
+
+    .info-card {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background-color: #f8f8f8;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    table th {
+        font-weight: bold;
+    }
+</style>
+
+@code{
+
+[Parameter]
+public string Id {get; set;}= "No hay Id";
+
+Aplicacion aplicacion = new Aplicacion();
+
+        protected override void OnInitialized()
+        {
+             
+            if(Directory.Exists("datax")){
+
+
+                if(File.Exists("datax/" + Id + ".json")){
+
+                string json = File.ReadAllText ("datax/" + Id + ".json");
+                aplicacion =  Newtonsoft.Json.JsonConvert.DeserializeObject<Aplicacion>(json);
+            }
+
+            }
+            
+          
+        }
+
+
+}
