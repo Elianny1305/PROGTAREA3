@@ -1,0 +1,82 @@
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\appsettings.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\tarea3.staticwebassets.runtime.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\tarea3.exe
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\tarea3.deps.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\tarea3.runtimeconfig.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\tarea3.dll
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\tarea3.pdb
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.AssemblyInfoInputs.cache
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.AssemblyInfo.cs
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.csproj.CoreCompileInputs.cache
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.RazorAssemblyInfo.cache
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.RazorAssemblyInfo.cs
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.tarea3.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.build.tarea3.props
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.tarea3.props
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.tarea3.props
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\scopedcss\bundle\tarea3.styles.css
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\scopedcss\projectbundle\tarea3.bundle.scp.css
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.dll
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\refint\tarea3.dll
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.pdb
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.genruntimeconfig.cache
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\ref\tarea3.dll
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.csproj.AssemblyReference.cache
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Elianny\tarea3\obj\Debug\net7.0\tarea3.csproj.CopyComplete
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\datax\e542d6a4-b139-4724-a7bf-2be0108d8664.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\datax\11f68fb8-3f7c-4894-bef6-65a4eae3c241.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\datax\b1d5abb2-361f-4d83-a5ad-8f9f3d36d49c.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\datax\fa2ad6c0-1731-429e-975b-7db34839f23d.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\datax\3e209965-30c4-4273-ac53-49af23db3fd8.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\datax\8d126363-368f-43e1-a054-5702431e14cf.json
+C:\Users\Elianny\tarea3\bin\Debug\net7.0\datax\f413aeec-dc19-4144-8864-28a114f8c7ea.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\appsettings.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\datax\11f68fb8-3f7c-4894-bef6-65a4eae3c241.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\datax\3e209965-30c4-4273-ac53-49af23db3fd8.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\datax\8d126363-368f-43e1-a054-5702431e14cf.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\datax\b1d5abb2-361f-4d83-a5ad-8f9f3d36d49c.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\datax\e542d6a4-b139-4724-a7bf-2be0108d8664.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\datax\f413aeec-dc19-4144-8864-28a114f8c7ea.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\datax\fa2ad6c0-1731-429e-975b-7db34839f23d.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\tarea3.staticwebassets.runtime.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\tarea3.exe
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\tarea3.deps.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\tarea3.runtimeconfig.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\tarea3.dll
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\tarea3.pdb
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.csproj.AssemblyReference.cache
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.AssemblyInfoInputs.cache
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.AssemblyInfo.cs
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.csproj.CoreCompileInputs.cache
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.RazorAssemblyInfo.cache
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.RazorAssemblyInfo.cs
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.tarea3.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.build.tarea3.props
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.tarea3.props
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.tarea3.props
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\scopedcss\bundle\tarea3.styles.css
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\scopedcss\projectbundle\tarea3.bundle.scp.css
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.csproj.CopyComplete
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.dll
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\refint\tarea3.dll
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.pdb
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\tarea3.genruntimeconfig.cache
+C:\Users\Elianny\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\Escritorio\tarea3\obj\Debug\net7.0\ref\tarea3.dll
