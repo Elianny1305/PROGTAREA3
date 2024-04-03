@@ -1,0 +1,132 @@
+﻿@page "/"
+@layout SimpleLayout
+@inject IJSRuntime Jsx
+@inject NavigationManager Nav
+
+<PageTitle>Programa ayuda a los niños</PageTitle>
+<div class="container text-center"> 
+    <div class="d-flex justify-content-center align-items-center" style="height: 300px;"> <!-- Centrar verticalmente -->
+        <img src="https://seeklogo.com/images/G/gobierno-de-la-republica-dominicana-logo-3F99A68C42-seeklogo.com.png" alt="" />
+    </div>
+</div>
+
+
+<EditForm Model="intento" OnValidSubmit="EnviarDatos">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+<div class="container" style="background-color: rgb(57, 57, 222)98, 209); padding: 20px; border-radius: 5px;">
+  
+            <!-- Datos personales -->
+            <h3>Datos Personales</h3>
+            <div class="form-group">
+                
+            </div>
+        </div>
+        <div class="col-md-12">
+            <!-- Correo y Dirección --> 
+            <h3>Contacto</h3>
+            <div class="form-group">
+                <label>Correo</label>
+                <input class="form-control" type="email" @bind-value="intento.Correo" />
+            </div>
+            <div class="form-group">
+                <label>Dirección</label>
+                <input class="form-control" type="text" @bind-value="intento.Direccion" />
+            </div>
+         <div class="form-group">  
+         <label>Telefono</label>
+        <input class="form-control" type="tel" @bind-value="intento.Telefono" />
+    </div>
+        </div>
+   
+    <div class="row">
+        <div class="col-md-12">
+            <!-- Estado Civil y Profesión -->
+            <h3>Información Adicional</h3>
+            <div class="form-group">
+                <label>Estado Civil</label>
+                <select class="form-control" @bind="intento.EstadoCivil">
+                    <option value="">Seleccione</option>
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Viudo">Viudo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Profesión</label>
+                <input class="form-control" type="text" @bind-value="intento.Profesion" />
+            </div>
+        </div> 
+         </div> 
+        
+ 
+ </EditForm>
+<style>
+    .container {
+        background-color: #fff; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    h3 {
+        color: rgb(7, 76, 145); 
+    }
+
+   
+    .btn-primary {
+        background-color: #631cdf; 
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background-color: rgb(51, 81, 212); /
+    }
+</style>
+@code{
+
+  Aplicacion intento = new Aplicacion();
+      List<string> errores =new List<string>();
+
+       
+        protected override void OnInitialized()
+        {
+           intento.Persona = new Persona();
+           for (int i = 0; i <5; i++)
+           {
+            intento.Amigos.Add(new Persona());
+           }
+
+            
+        }
+
+        void EnviarDatos(){
+
+            errores.Clear();
+            if (intento.Persona.Nombre.Length<3)
+            {
+                errores.Add("Dbe tener una persona valida");
+            }
+            if (intento.Correo.Length<3)
+            {
+                errores.Add("Dbe tener un Correo valido");
+            }
+           if (intento.Direccion.Length<3)
+            {
+                errores.Add("Dbe tener una Direccion valida");
+            }
+
+            if (intento.EstadoCivil.Length<3)
+            {
+                errores.Add("Dbe tener un Estado civil valido");
+            }
+
+            if (intento.Profesion.Length<3)
+            {
+                errores.Add("Dbe tener una profesionvalida");
+            }
+           
+}
+}
