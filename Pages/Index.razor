@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/"
 @layout SimpleLayout
 @inject IJSRuntime Jsx
 @inject NavigationManager Nav
@@ -61,7 +61,62 @@
         </div> 
          </div> 
         
+        <div class="row">
+            
+        <div class="col-md-12">
+            <!-- Motivo -->
+            <h3>¿Por qué merece recibir el bono?</h3>
+            <div class="form-group">
+                <InputTextArea @bind-Value="intento.Motivo" class="form-control" ValidationFor="@( () => intento.Motivo)" />
+                <ValidationMessage For="@( () => intento.Motivo)" />
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="row">
+    <div class="col-md-12">
+        <!-- Amigos -->
+        <h3>Recomendar Amigos</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var amigo in intento.Amigos)
+                {
+                    <tr>
+                        <td> </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div> 
+</div>
+    <div class="row">
  
+        <div class="text-center">
+            @if (errores.Count > 0)
+            {
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach (var error in errores)
+                        {
+                            <li>@error</li>
+                        }
+                    </ul>
+                </div>
+            }
+            <button type="submit" class="btn btn-primary btn-lg"
+                style="background-color: rgb(41, 39, 147); color: white;">
+                <i class="fa fa-save"></i> Enviar
+            </button>
+
+        </div>
+</div>
+
  </EditForm>
 <style>
     .container {
@@ -127,6 +182,57 @@
             {
                 errores.Add("Dbe tener una profesionvalida");
             }
-           
+           if (intento.Motivo.Length<3)
+            {
+                errores.Add("Dbe tener un Motivo valida");
+            }
+
+            int amigosValidos = 0;
+            foreach (var amigo in intento.Amigos)
+            {
+                if (amigo.Nombre.Length > 2)
+                {
+                    amigosValidos++;
+                }
+            }
+
+            if (amigosValidos < 2)
+            {
+                errores.Add("Debete tener por lo menos 2 amigos");
+            }
+
+            if (errores.Count > 0){
+               
+               
+               return;
+            }
+
+            intento.Id = Guid.NewGuid ().ToString();
+            var datos = Newtonsoft.Json.JsonConvert.SerializeObject(intento);
+
+            Console.WriteLine("Se envio el formulario");
+            Console.WriteLine (datos);
+            
+   
+
+            if (!Directory.Exists("datax")){
+
+                Directory.CreateDirectory("datax");
+            }
+
+    
+
+            File.WriteAllText($"datax/{intento.Id}.json",datos);
+
+            Jsx.InvokeVoidAsync("alert", "Sen envio el formulario");
+
+
+
+
+            Nav.NavigateTo("/", true);
+
+        }
+
+            
 }
-}
+
