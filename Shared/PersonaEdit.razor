@@ -1,0 +1,134 @@
+@inject NavigationManager Nav
+
+<div class="row">
+    <div class="col col-md-3">
+        <label>Cedula</label>
+        <div class="input-group">
+            <input type="text" class="form-control" @bind-value="Modelo.Cedula" />
+            <div class="input-group-append">
+                <button class="btn btn-primary" @onclick="validar">
+                    <i class="fas fa-check"></i> Validar
+                </button>
+            </div>
+        </div>
+        @if (mensajeErrorCedula != "")
+        {
+            <div class="alert alert-danger" role="alert">
+                @mensajeErrorCedula
+            </div>
+        }
+    </div>
+    <div class="col col-md-3">
+        <label>Nombre</label>
+        <div class="form-control">@Modelo.Nombre</div>
+    </div>
+    <div class="col col-md-3">
+        <label>Apellido</label>
+        <div class="form-control">@Modelo.Apellido</div>
+    </div>
+     <div class="col col-md-3">
+        <label>Sexo</label>
+        <div class="form-control">@Modelo.Sexo</div>
+    </div>
+    <div class="col col-md-3">
+        <label>Fecha de Nacimiento</label>
+        <div class="form-control">@Modelo.fechaNacimiento</div>
+    </div>
+
+</div>
+
+
+
+
+@code{
+
+
+    string mensajeErrorCedula = "";
+    HashSet<
+   
+     string> registeredCedula = new HashSet<string>();
+
+    async Task validar(){
+
+        mensajeErrorCedula= "";
+
+        if (Modelo.Cedula.Length != 11){
+            mensajeErrorCedula = "La cedula debe tener 11 digitos actualmente tiene" + Modelo.Cedula.Length;
+            return;
+        }
+       bool confirmCedula = envios.Any(env => env.Persona.Cedula == Modelo.Cedula);
+
+        if (confirmCedula)
+        {
+            mensajeErrorCedula = "Ya ha realizado su envio anteriormente    .";
+            return;
+        }
+
+        var ulr = "https://api.adamix.net/apec/cedula/" + Modelo.Cedula;
+
+        var http = new HttpClient();
+
+        var respuesta = await http.GetAsync(ulr);
+
+        if (respuesta.IsSuccessStatusCode){
+
+            var json = await respuesta.Content.ReadAsStringAsync();
+            var persona =Newtonsoft.Json.JsonConvert.DeserializeObject <PersonaJce>(json);
+             if (persona.ok){
+                Modelo.Nombre = persona.Nombres;
+                Modelo.Apellido = persona.Apellido1 + " " + persona.Apellido2;
+                Modelo.Sexo =persona.IdSexo;
+                Modelo.fechaNacimiento =persona.FechaNacimiento;
+
+               
+                StateHasChanged();
+                 StateHasChanged();
+
+             }else {
+            mensajeErrorCedula = "La cedula no fue encontrada en el padron";
+        }
+        
+
+
+        }else {
+            mensajeErrorCedula = "La cedula no es valida";
+        }
+
+    }
+
+
+    [Parameter]
+
+    public Persona Modelo{get; set;} = new Persona();
+
+    
+    List<Aplicacion> envios = new List<Aplicacion>();
+
+
+        void navegar(string id){
+
+            Nav.NavigateTo($"/admin/{id}");
+        }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+
+       
+        
+        if(!Directory.Exists("datax"))
+        {
+            return;
+        }
+        var files= Directory.GetFiles("datax");
+
+        foreach (var file in files)
+        {
+            var content = await File.ReadAllTextAsync(file);
+            var envio = Newtonsoft.Json.JsonConvert.DeserializeObject<Aplicacion>(content);
+
+                envios.Add(envio);
+        }
+    }
+}
+}
