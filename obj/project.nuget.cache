@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QCA0aHMPISMT9hWNgN8ztHEv9U4waym6t/T4Ho/EpYaMTf/sTPd/UdaEXJT0pGRYJiHqv8p2tEIaRKe+AMs22A==",
+  "dgSpecHash": "PWEGmWkfNlG8XGfe7cPuPsWMw2OrKqWFH11OAjbXalQARhUXPIMuf6tUpCC4bI1Y8ExlCJb4j45/TC0zhiaHSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Elianny\\OneDrive - Instituto Tecnológico de Las Américas (ITLA)\\Escritorio\\tarea3\\tarea3.csproj",
+  "projectFilePath": "C:\\Users\\Elianny\\tarea3\\PROGTAREA3\\tarea3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elianny\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
